@@ -1,4 +1,5 @@
-let distFolder = require('path').basename(__dirname);
+// let distFolder = require('path').basename(__dirname);
+let distFolder = "dist";
 let srcFolder = "#src";
 
 let fs = require('fs');
