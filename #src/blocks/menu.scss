@@ -1,0 +1,22 @@
+.menu {
+   &__btn {
+      display: none;
+   }
+
+   &__list {
+      list-style-type: none;
+      display: flex;
+   }
+
+   &__item {
+      margin-left: 25px;
+   }
+
+   &__link {
+      color: $colorText;
+      transition: color 0.3s;
+      &:hover {
+         color: $colorPrimary;
+      }
+   }
+}

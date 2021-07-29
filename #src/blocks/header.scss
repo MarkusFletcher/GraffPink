@@ -1,0 +1,17 @@
+.header {
+   &__container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__logo {
+   }
+
+   &__logo-img {
+   }
+
+   &__menu {
+   }
+}
