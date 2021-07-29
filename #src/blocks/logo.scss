@@ -1,6 +1,10 @@
 .logo {
-   &__img {
-      height: 2rem;
-      width: auto;
+   font-size: 41px;
+   color: $colorText;
+   &__pink {
+      color: $colorText_pink;
+   }
+   @media (max-width: $sm) {
+      font-size: 30px;
    }
 }

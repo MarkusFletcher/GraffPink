@@ -1,0 +1,17 @@
+.news {
+   box-shadow: 0px 5px 5px -5px rgba(136, 136, 136, 0.6) inset;
+
+   &__container {
+      @media (min-width: $md) {
+         padding-top: 48px;
+         padding-left: 81px;
+      }
+   }
+
+   &__title {
+   }
+
+   &__post {
+      margin-bottom: 78px;
+   }
+}

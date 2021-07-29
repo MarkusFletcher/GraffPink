@@ -1,23 +1,29 @@
 // Breakpoints--------------------------------------------------------------------------------------
 $sm: 479px; // Мобильный - Small (sm)
-$md: 767px; // Средний - Medium (md)
+$md: 800px; // Средний - Medium (md)
 $lg: 991px; // Большой - Large (lg)
 $xl: 1199px; // Очень большой - Extra large (xl)
 $xxl: 1399px; // Огромный - Extra extra large (xxl)
 
 // Ширина контейнера
-$maxWidthContainer: 1000;
+$maxWidthContainer: 1054;
 
 // Шрифт по умолчанию-------------------------------------------------------------------------------
 $fontFamily: "OpenSans", sans-serif;
 $fontSize: 1rem;
 
+// Высота header'a
+$headerHeight: 89px;
+
 // Цвета--------------------------------------------------------------------------------------------
-$colorText: hsl(199, 93%, 4%);
-$colorText_light: hsl(199, 93%, 94%);
-$colorText_pink: hsl(345, 53%, 47%);
+$colorPink: hsl(359, 63%, 65%);
+$colorDarkPink: hsl(345, 53%, 47%);
+
+$colorText: hsl(0, 0%, 0%);
+$colorText_light: hsl(0, 0%, 100%);
+$colorText_pink: $colorDarkPink;
+
+$colorSocial: hsl(150, 1%, 42%);
 
 $colorPrimary: hsl(199, 93%, 45%);
 $colorPrimary_hover: hsl(199, 93%, 50%);
-
-$colorPink: hsl(359, 63%, 65%);
