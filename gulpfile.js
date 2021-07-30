@@ -69,7 +69,6 @@ gulp.task('otf2ttf', function () {
 function html() {
 	return src(path.src.html)
 		.pipe(include())
-		// .pipe(webphtml())
 		.pipe(dest(path.dist.html))
 }
 

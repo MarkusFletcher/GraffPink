@@ -26,6 +26,7 @@ html {
 
 body {
   overflow-x: hidden;
+  min-width: 320px;
 }
 
 ul,
@@ -71,10 +72,6 @@ select {
   padding: 0 15px;
 }
 
-.text {
-  color: black;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -86,26 +83,31 @@ select {
   clip: rect(0 0 0 0);
 }
 
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: none;
-  text-align: center;
-  font-family: inherit;
-  font-size: 1rem;
-  line-height: 1.15em;
-  min-width: 100px;
-  padding: 0.6em 2.4em;
-  cursor: pointer;
-  background-color: #089add;
-  color: white;
-  -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+html,
+body {
+  height: 100%;
 }
 
-.btn:hover {
-  background-color: #09abf6;
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.header,
+.footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .header {
@@ -493,7 +495,7 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 29px 0 30px 81px;
+  padding: 29px 15px 30px 81px;
 }
 
 .footer__menu {
@@ -514,12 +516,12 @@ select {
 
 .footer__menu-link {
   font-size: 21px;
-  color: #aeaeae;
+  color: #adadad;
 }
 
 .footer__submenu-link {
   font-size: 15px;
-  color: #8b8b8b;
+  color: #8c8c8c;
   line-height: 1.5;
 }
 
@@ -545,10 +547,6 @@ select {
   display: flex;
 }
 
-.social__item:not(:last-child) {
-  margin-right: 25px;
-}
-
 .social__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,6 +561,12 @@ select {
   height: 52px;
   border-radius: 50%;
   background-color: #6a6c6b;
+}
+
+@media (min-width: 479px) {
+  .social__item:not(:last-child) {
+    margin-right: 25px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -662,11 +666,17 @@ select {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 30px 15px;
   }
 
   .footer__menu {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-right: 0;
+  }
+
+  .footer__menu-item {
+    margin-bottom: 15px;
   }
 
   .footer__social {
@@ -696,8 +706,6 @@ select {
   }
 
   .social {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }

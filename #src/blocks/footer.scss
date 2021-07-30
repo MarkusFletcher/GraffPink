@@ -3,10 +3,11 @@
    background-size: cover;
    &__container {
       display: flex;
-      padding: 29px 0 30px 81px;
+      padding: 29px 15px 30px 81px;
       @media (max-width: $md) {
          flex-direction: column;
          align-items: center;
+         padding: 30px 15px;
       }
    }
 
@@ -18,16 +19,20 @@
       margin-right: 48px;
       @media (max-width: $md) {
          flex-wrap: wrap;
+         margin-right: 0;
       }
    }
 
    &__menu-item {
       margin-right: 15px;
+      @media (max-width: $md) {
+         margin-bottom: 15px;
+      }
    }
 
    &__menu-link {
       font-size: 21px;
-      color: rgb(174, 174, 174);
+      color: hsl(0, 0%, 68%);
    }
 
    &__submenu {
@@ -38,7 +43,7 @@
 
    &__submenu-link {
       font-size: 15px;
-      color: rgb(139, 139, 139);
+      color: hsl(0, 0%, 55%);
       line-height: 1.5;
    }
 
@@ -65,7 +70,9 @@
    display: flex;
    &__item {
       &:not(:last-child) {
-         margin-right: 25px;
+         @media (min-width: $sm) {
+            margin-right: 25px;
+         }
       }
       @media (max-width: $sm) {
          margin: 0 12px 12px 12px;
@@ -82,7 +89,7 @@
       background-color: $colorSocial;
    }
    @media (max-width: $sm) {
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
       justify-content: space-around;
    }
 }

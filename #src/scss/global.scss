@@ -7,10 +7,6 @@
    }
 }
 
-.text {
-   color: $colorText;
-}
-
 .visually-hidden {
    position: absolute;
    width: 1px;
@@ -20,4 +16,25 @@
    overflow: hidden;
    border: 0;
    clip: rect(0 0 0 0);
+}
+
+// Прижать footer
+
+html,
+body {
+   height: 100%;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+}
+
+.content {
+   flex: 1 0 auto;
+}
+
+.header,
+.footer {
+   flex-shrink: 0;
 }
