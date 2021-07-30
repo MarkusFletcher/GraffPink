@@ -488,6 +488,7 @@ body {
 
 .footer {
   background-image: url("../img/footer-bg.png");
+  background-color: #292929;
   background-size: cover;
 }
 
